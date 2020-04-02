@@ -1,0 +1,56 @@
+
+const instructions = Platform.select({
+  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
+  android: 'Double tap R on your keyboard to reload,\n' + 'Shake or press menu button for dev menu',
+});
+
+// export default class App extends Component {
+
+//   state = {
+//     myState: 'Welkom Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+//   }
+
+//   updateState = () => this.setState({ myState: 'The state is updated'})
+
+  // render() {
+
+
+
+--------------------------------------------------------------------
+
+  const App = () => {
+    return (
+        <View style = {styles.container}>
+          <View style = {styles.redbox}></View>
+          <View style = {styles.bluebox}></View>
+          <View style = {styles.blackbox}></View>
+        </View>
+    );
+  }
+
+  export default App
+
+  const styles = StyleSheet.create ({
+    container: {
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      alignItems: 'flex-end',
+      backgroundColor: 'grey',
+      height: 600
+    },
+    redbox: {
+      width: 100,
+      height: 100,
+      backgroundColor: 'red'
+    },
+    bluebox: {
+      width: 100,
+      height: 100,
+      backgroundColor: 'blue'
+    },
+    blackbox: {
+      width: 100,
+      height: 100,
+      backgroundColor: 'black'
+    }
+  })
